@@ -38,7 +38,7 @@
 \@addtoreset{section}{article}
 \makeatother
 \titleformat{\section}[runin]{\normalfont\scshape}
-{Статья \thesection.}{.5em}{}[\quad]
+{Статья \thesection:}{.5em}{}[\quad]
 
 \renewcommand{\thesection}{\arabic{section}} 
 \renewcommand{\theenumi}{\arabic{enumi}}
