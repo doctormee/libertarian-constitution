@@ -27,6 +27,7 @@
 {\hspace*{-2.3em}}
 {\titlerule*[1pc]{.}\contentspage}
 
+
 %\makeatletter
 %\renewcommand\section{\@startsection
 %{section}{1}{0mm}%
@@ -35,10 +36,16 @@
 %{\normalfont\normalsize\bfseries}}%
 %\makeatother
 \makeatletter
-\@addtoreset{section}{article}
+%\@addtoreset{section}{article}
 \makeatother
 \titleformat{\section}[runin]{\normalfont\scshape}
 {Статья \thesection:}{.5em}{}[\quad]
+\titlecontents{section}
+[1.5em]
+{\bfseries}
+{\contentslabel{2.3em}}
+{\hspace*{-2.3em}}
+{\titlerule*[1pc]{.}\contentspage}
 
 \renewcommand{\thesection}{\arabic{section}} 
 \renewcommand{\theenumi}{\arabic{enumi}}
